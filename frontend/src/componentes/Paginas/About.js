@@ -18,9 +18,6 @@ export default function AboutFull({ props }) {
       <div style={{ textAlign: 'center' }}>
         <h1>Grupo No.5</h1>
         <h2>201800464 - Pablo Andres Argueta Hernandez</h2>
-        <h2>201503798 - Sergio Lenin González Solis</h2>
-        <h2>201602999 - Alex René López Rosa</h2>
-        <h2>201113915 - Victor Alfonso López Morales</h2>
       </div>
     </div>
   );
