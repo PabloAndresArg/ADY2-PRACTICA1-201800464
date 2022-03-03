@@ -18,7 +18,7 @@ export default function AboutFull({ props }) {
       <div style={{ textAlign: 'center' }}>
         <h1>ANALISIS Y DISEÑO 2</h1>
         <h2>201800464 - Pablo Andres Argueta Hernandez</h2>
-        <h1>ANALISIS Y DISEÑO 2 ** </h1>
+        <h1>HIZO BIEN EL MOVE </h1>
       </div>
     </div>
   );
