@@ -20,9 +20,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'rd /S /Q "C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/nginx-1.20.2/html/static"'
+                bat("xcopy C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/frontend/build/* C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/nginx-1.20.2/html /O /X /E /H /K")
+                
                 sh 'move "C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/frontend/build/*"  "C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/nginx-1.20.2/html"'
+                sh 'rd /S /Q "C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/nginx-1.20.2/html/static"'
                 sh 'move "C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/frontend/build/static"  "C:/Users/Pablo/Desktop/AYD2-PRACTICA1/ADY2-PRACTICA1-201800464/nginx-1.20.2/html"'
+
             }
         }
     }
