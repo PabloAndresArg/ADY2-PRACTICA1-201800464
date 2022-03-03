@@ -17,7 +17,7 @@ export default function AboutFull({ props }) {
       <Navbar props={props} tituloP={'About'}></Navbar>
       <div style={{ textAlign: 'center' }}>
         <h1>ANALISIS Y DISEÑO 2</h1>
-        <h2>201800464 - Pablo Andres Argueta Hernandez</h2>
+        <h2>201800464 - Pablo Andres Argueta HernandezT</h2>
         <h1>PROBANDO TODO EL FLUJO DEVOPS </h1>
       </div>
     </div>
